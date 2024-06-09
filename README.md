@@ -2,6 +2,8 @@
 
 Lazy Base64Value wrapper ported from [Helidon Base64Value](https://github.com/helidon-io/helidon/blob/main/common/common/src/main/java/io/helidon/common/Base64Value.java)
 
+[API DOC](https://lost22git.github.io/base64_value.cr)
+
 ## Installation
 
 1. Add the dependency to your `shard.yml`:
@@ -9,7 +11,7 @@ Lazy Base64Value wrapper ported from [Helidon Base64Value](https://github.com/he
    ```yaml
    dependencies:
      base64_value:
-       github: lost22git/base64_value
+       github: lost22git/base64_value.cr
    ```
 
 2. Run `shards install`
@@ -43,7 +45,7 @@ crystal spec --progress
 
 ## Contributing
 
-1. Fork it (<https://github.com/lost22git/base64_value/fork>)
+1. Fork it (<https://github.com/lost22git/base64_value.cr/fork>)
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
