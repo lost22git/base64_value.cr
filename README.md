@@ -1,6 +1,6 @@
 # base64_value
 
-Lazy Base64Value wrapper ported from [Helidon Base64Value](https://github.com/helidon-io/helidon/blob/main/common/common/src/main/java/io/helidon/common/Base64Value.java)
+Lazy Base64Value wrapper
 
 [API DOC](https://lost22git.github.io/base64_value.cr)
 
