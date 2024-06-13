@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Crystal Docs 1.12.2">
+<meta name="crystal_docs.project_version" content="main">
+<meta name="crystal_docs.project_name" content="base64_value">
+
+
+
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/doc.js"></script>
+
+  <meta name="repository-name" content="base64_value">
+  <title>Base64Value - base64_value main</title>
+  <script type="text/javascript">
+    CrystalDocs.base_path = "";
+  </script>
+</head>
+<body>
+
+<svg class="hidden">
+  <symbol id="octicon-link" viewBox="0 0 16 16">
+    <path fill="currentColor" fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
+  </symbol>
+</svg>
+<input type="checkbox" id="sidebar-btn">
+<label for="sidebar-btn" id="sidebar-btn-label">
+  <svg class="open" xmlns="http://www.w3.org/2000/svg" height="2em" width="2em" viewBox="0 0 512 512"><title>Open Sidebar</title><path fill="currentColor" d="M80 96v64h352V96H80zm0 112v64h352v-64H80zm0 112v64h352v-64H80z"></path></svg>
+  <svg class="close" xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 512 512"><title>Close Sidebar</title><path fill="currentColor" d="m118.6 73.4-45.2 45.2L210.7 256 73.4 393.4l45.2 45.2L256 301.3l137.4 137.3 45.2-45.2L301.3 256l137.3-137.4-45.2-45.2L256 210.7Z"></path></svg>
+</label>
+<div class="sidebar">
+  <div class="sidebar-header">
+    <div class="search-box">
+      <input type="search" class="search-input" placeholder="Search..." spellcheck="false" aria-label="Search">
+    </div>
+
+    <div class="project-summary">
+      <h1 class="project-name">
+        <a href="index.html">
+          base64_value
+        </a>
+      </h1>
+
+      <span class="project-version">
+        main
+      </span>
+    </div>
+  </div>
+
+  <div class="search-results hidden">
+    <ul class="search-list"></ul>
+  </div>
+
+  <div class="types-list">
+    <ul>
+  
+  <li class=" current" data-id="base64_value/Base64Value" data-name="base64value">
+      <a href="Base64Value.html">Base64Value</a>
+      
+    </li>
+  
+</ul>
+
+  </div>
+</div>
+
+
+<div class="main-content">
+<h1 class="type-name">
+
+  <span class="kind">class</span> Base64Value
+
+</h1>
+
+
+  <ul class="superclass-hierarchy"><li class="superclass"><a href="Base64Value.html">Base64Value</a></li><li class="superclass">Reference</li><li class="superclass">Object</li></ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2>
+    <a id="defined-in" class="anchor" href="#defined-in">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>
+    Defined in:
+  </h2>
+  
+    
+      <a href="https://github.com/lost22git/base64_value.cr/blob/be201f7cd9c1531146f413c4de330ed582f77ef5/src/base64_value.cr#L3" target="_blank">
+        base64_value.cr
+      </a>
+    
+    <br/>
+  
+
+
+
+  
+    <h2>
+      <a id="constant-summary" class="anchor" href="#constant-summary">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>
+      Constant Summary
+    </h2>
+  
+  <dl>
+    
+      <dt class="entry-const" id="VERSION">
+        <strong>VERSION</strong> = <code><span class="s">&quot;0.1.0&quot;</span></code>
+      </dt>
+      
+    
+  </dl>
+
+
+
+  <h2>
+    <a id="constructors" class="anchor" href="#constructors">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>
+    Constructors
+  </h2>
+  <ul class="list-summary">
+    
+      <li class="entry-summary">
+        <a href="#from_bytes%28bytes%3ABytes%2Curlsafe%3ABool%3Dfalse%29%3ABase64Value-class-method" class="signature"><strong>.from_bytes</strong>(bytes : Bytes, urlsafe : Bool = <span class="n">false</span>) : Base64Value</a>
+        
+          <div class="summary"><p>create Base64Value from bytes</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#from_plain%28plain%3AString%2Curlsafe%3ABool%3Dfalse%29%3ABase64Value-class-method" class="signature"><strong>.from_plain</strong>(plain : String, urlsafe : Bool = <span class="n">false</span>) : Base64Value</a>
+        
+          <div class="summary"><p>create Base64Value from plain string</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#parse%28base64%3AString%29%3ABase64Value-class-method" class="signature"><strong>.parse</strong>(base64 : String) : Base64Value</a>
+        
+          <div class="summary"><p>parse base64 string to Base64Value</p></div>
+        
+      </li>
+    
+  </ul>
+
+
+
+
+
+
+
+  <h2>
+    <a id="instance-method-summary" class="anchor" href="#instance-method-summary">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>
+    Instance Method Summary
+  </h2>
+  <ul class="list-summary">
+    
+      <li class="entry-summary">
+        <a href="#to_bytes%3ABytes-instance-method" class="signature"><strong>#to_bytes</strong> : Bytes</a>
+        
+          <div class="summary"><p>to bytes</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#to_plain%3AString-instance-method" class="signature"><strong>#to_plain</strong> : String</a>
+        
+          <div class="summary"><p>to plain string</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#to_s%3AString-instance-method" class="signature"><strong>#to_s</strong> : String</a>
+        
+          <div class="summary"><p>to base64 string</p></div>
+        
+      </li>
+    
+  </ul>
+
+
+
+<div class="methods-inherited">
+  
+    
+
+
+    
+
+
+    
+
+
+    
+
+
+  
+    
+
+
+    
+
+
+    
+
+
+    
+
+
+  
+</div>
+
+
+  <h2>
+    <a id="constructor-detail" class="anchor" href="#constructor-detail">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>
+    Constructor Detail
+  </h2>
+  
+    <div class="entry-detail" id="from_bytes(bytes:Bytes,urlsafe:Bool=false):Base64Value-class-method">
+      <div class="signature">
+        
+        def self.<strong>from_bytes</strong>(bytes : Bytes, urlsafe : Bool = <span class="n">false</span>) : <a href="Base64Value.html">Base64Value</a>
+
+        <a class="method-permalink" href="#from_bytes%28bytes%3ABytes%2Curlsafe%3ABool%3Dfalse%29%3ABase64Value-class-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>create Base64Value from bytes</p>
+<pre><code class="language-crystal">base64_value <span class="o">=</span> <span class="t">Base64Value</span>.from_bytes(<span class="t">UInt8</span>.static_array(<span class="n">99</span>, <span class="n">114</span>, <span class="n">121</span>, <span class="n">115</span>, <span class="n">116</span>, <span class="n">97</span>, <span class="n">108</span>).to_slice)
+puts base64_value.to_s <span class="c"># =&gt; Y3J5c3RhbA==</span></code></pre>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/lost22git/base64_value.cr/blob/be201f7cd9c1531146f413c4de330ed582f77ef5/src/base64_value.cr#L34" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="from_plain(plain:String,urlsafe:Bool=false):Base64Value-class-method">
+      <div class="signature">
+        
+        def self.<strong>from_plain</strong>(plain : String, urlsafe : Bool = <span class="n">false</span>) : <a href="Base64Value.html">Base64Value</a>
+
+        <a class="method-permalink" href="#from_plain%28plain%3AString%2Curlsafe%3ABool%3Dfalse%29%3ABase64Value-class-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>create Base64Value from plain string</p>
+<pre><code class="language-crystal">base64_value <span class="o">=</span> <span class="t">Base64Value</span>.from_plain(<span class="s">&quot;crystal&quot;</span>)
+puts base64_value.to_s <span class="c"># =&gt; Y3J5c3RhbA==</span></code></pre>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/lost22git/base64_value.cr/blob/be201f7cd9c1531146f413c4de330ed582f77ef5/src/base64_value.cr#L49" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="parse(base64:String):Base64Value-class-method">
+      <div class="signature">
+        
+        def self.<strong>parse</strong>(base64 : String) : <a href="Base64Value.html">Base64Value</a>
+
+        <a class="method-permalink" href="#parse%28base64%3AString%29%3ABase64Value-class-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>parse base64 string to Base64Value</p>
+<pre><code class="language-crystal">base64_value <span class="o">=</span> <span class="t">Base64Value</span>.parse(<span class="s">&quot;Y3J5c3RhbA==&quot;</span>)
+puts base64_value.to_s <span class="c"># =&gt; Y3J5c3RhbA==</span></code></pre>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/lost22git/base64_value.cr/blob/be201f7cd9c1531146f413c4de330ed582f77ef5/src/base64_value.cr#L19" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+
+
+
+
+
+
+
+  <h2>
+    <a id="instance-method-detail" class="anchor" href="#instance-method-detail">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>
+    Instance Method Detail
+  </h2>
+  
+    <div class="entry-detail" id="to_bytes:Bytes-instance-method">
+      <div class="signature">
+        
+        def <strong>to_bytes</strong> : Bytes
+
+        <a class="method-permalink" href="#to_bytes%3ABytes-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>to bytes</p>
+<pre><code class="language-crystal">base64_value <span class="o">=</span> <span class="t">Base64Value</span>.parse(<span class="s">&quot;Y3J5c3RhbA==&quot;</span>)
+puts base64_value.to_bytes <span class="c"># =&gt; Bytes[99, 114, 121, 115, 116, 97, 108]</span></code></pre>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/lost22git/base64_value.cr/blob/be201f7cd9c1531146f413c4de330ed582f77ef5/src/base64_value.cr#L75" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="to_plain:String-instance-method">
+      <div class="signature">
+        
+        def <strong>to_plain</strong> : String
+
+        <a class="method-permalink" href="#to_plain%3AString-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>to plain string</p>
+<pre><code class="language-crystal">base64_value <span class="o">=</span> <span class="t">Base64Value</span>.parse(<span class="s">&quot;Y3J5c3RhbA==&quot;</span>)
+puts base64_value.to_plain <span class="c"># =&gt; crystal</span></code></pre>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/lost22git/base64_value.cr/blob/be201f7cd9c1531146f413c4de330ed582f77ef5/src/base64_value.cr#L86" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="to_s:String-instance-method">
+      <div class="signature">
+        
+        def <strong>to_s</strong> : String
+
+        <a class="method-permalink" href="#to_s%3AString-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>to base64 string</p>
+<pre><code class="language-crystal">base64_value <span class="o">=</span> <span class="t">Base64Value</span>.parse(<span class="s">&quot;Y3J5c3RhbA==&quot;</span>)
+puts base64_value.to_s <span class="c"># =&gt; Y3J5c3RhbA==</span></code></pre>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/lost22git/base64_value.cr/blob/be201f7cd9c1531146f413c4de330ed582f77ef5/src/base64_value.cr#L64" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+
+
+</div>
+
+</body>
+</html>
